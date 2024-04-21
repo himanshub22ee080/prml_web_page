@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Presentation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: black;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        section {
+            max-width: 95%; /* Increased max-width */
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: white;
+        }
+        h2 {
+            margin-top: 0;
+        }
+        h1 {
+            font-size: 4em; /* Adjust font size as needed */
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+        img {
+           width: 500px; /* Set the width of the image */
+           height: auto; /* Maintain aspect ratio */
+        }
+        .member-img {
+            width: 200px; /* Adjust the width as needed */
+            height: auto; /* Maintain aspect ratio */
+            margin-right: 30px; /* Add some spacing between images */
+        }
+        .member-container {
+            display: flex; /* Use flexbox to align images side by side */
+            justify-content: center; /* Center-align the items */
+            flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+            gap: 20px; /* Add some spacing between items */
+        }
+        .member {
+            text-align: center; /* Center-align the text */
+            max-width: 200px; /* Set max width for the container */
+        }
+        .member-containers {
+            display: flex; /* Use flexbox to align images side by side */
+            justify-content: center; /* Center-align the items */
+            flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+            gap: 60px; /* Add some spacing between items */
+        }
+        .inline-images {
+            display: flex; /* Use flexbox to align images in a row */
+            justify-content: space-between; /* Distribute space between images */
+        }
+        .inline-images img {
+            flex: 0 0 auto; /* Allow images to grow and shrink as needed */
+            max-width: calc(33.33% - 10px); /* Set maximum width for each image */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="font-size: 4em;">Sentiment Classification Using ML algorithms</h1>
+        <p>
+            GitHub Links of Group Members:
+            <a href="https://github.com/b22ee080">Himanshu Sharma</a>,
+            <a href="https://github.com/B22EE075">Priyansh Saxena</a>,
+            <a href="https://github.com/vasishthapandya">Vasishtha Pandya</a>,
+            <a href="https://github.com/vidhijain04">Vidhi Jain</a>,
+            <a href="https://github.com/MahekVanjani611">Mahek Vanjani</a>,
+            <a href="https://github.com/SaumyaShah13">Saumya Shah</a>,
+            <a href="https://github.com/B22EE012">Anuska Desai</a>
+        </p>
+        <!-- Dropdown menu for sections -->
+        <div class="dropdown">
+            <button class="dropbtn">Click here to go to the different section of this webpage</button>
+            <div class="dropdown-content">
+                <a href="#Introduction">Introduction</a>
+                <a href="#About the Project">About the Project</a>
+                <a href="#GitHub Repository Link">GitHub Repository Link</a>
+                <a href="#YouTube Link">YouTube Link</a>
+                <a href="#Group Members">Group Members</a>
+                <!-- Add more links for other sections -->
+            </div>
+        </div>
+    </header>
+    <img src="C:\Users\HIMANSHU SHARMA\Desktop\prml_project\img4.jpeg" style="max-width: 100%; height: auto;">
+    <img src="C:\Users\HIMANSHU SHARMA\Desktop\prml_project\img2.jpg" style="max-width: 100%; height: auto;">
+    <img src="C:\Users\HIMANSHU SHARMA\Desktop\prml_project\img3.png" style="max-width: 100%; height: auto;">
+    <section id = "Introduction">
+        <h2 style="text-align: center;" style="font-size: 2em;">Introduction</h2>
+        <h2>What Is Sentiment Analysis?</h2>
+        <p>Sentiment analysis is a tool that can tell you if customers feel positive, negative, or neutral when contacting your company. It uses technology to analyze the words and tone in customer messages, such as emails, chats, or phone calls.</p>
+        <p>Imagine you're a manager at a contact center and want to know if customers are happy or upset with your products or services. Instead of reading everything yourself, sentiment analysis can quickly sort messages and tell you if they are positive, negative, or just okay.</p>
+        <h4>How does Sentiment Analysis works?</h4>
+        <img src = "https://assets-global.website-files.com/60740020d222cb8d835a05fc/6540d80f0aecec5cc41ee5b2_flowchart-01%201.png" style="max-width: 100%; height: auto;">
+        <br>
+        <div class="inline-images">
+            <img src="https://assets-global.website-files.com/60740020d222cb8d835a05fc/6540d8490aecec5cc41f12f9_POINTERS-01%201.png" style="max-width: 100%; height: auto;">
+            <img src="https://assets-global.website-files.com/60740020d222cb8d835a05fc/6540d88f59473202dcee2bb4_10%20points-01-01%201.png" style="max-width: 100%; height: auto;">
+            <img src="https://assets-global.website-files.com/60740020d222cb8d835a05fc/654376740c65efed8e798a8b_F-oKLfJqENxlHb3LNowpd6XpEUzNF9oZsjxkEgiJAZJcBWQTxp2V4T_twF43xKJaBO1MELcx8HfLQttg1Qy5Bp5LseyuV_VYeQIsdr15E1kI2uWc6jqtTz8Rz0tT26DBnmxSkMiVlZ_LlKYelnAb0sY.jpeg" style="max-width: 100%; height: auto;">
+        </div>
+    </section>
+
+    <section id = "About the Project">
+        <h2 style="text-align: center;" style="font-size: 2em;">About the Project</h2>
+        </div>
+        <h2>Aim : </h2>
+        <p>The aim of sentiment analysis is to develop computational methods for accurately determining the emotional tone or opinion expressed in text, such as tweets or product reviews. This enables understanding whether the sentiment conveyed is positive, negative, or neutral, facilitating insights into public opinion, customer feedback, and brand perception.</p>
+        <h2>Abstract</h2>
+        <p>In this study, we delved into the analysis of public opinion through sentiment analysis, leveraging social media platforms like Twitter and Facebook as rich sources of user sentiment. Traditional machine learning models such as decision trees, logistic regression, k-nearest neighbors (KNN), support vector machines (SVM), along with ensemble methods like bagging and boosting, were employed for sentiment analysis.
+
+            Additionally, we integrated the NLTK (Natural Language Toolkit) library for text processing tasks, enhancing our analysis with advanced natural language processing techniques. Our experiments involved comparing models with and without NLTK preprocessing, aiming to understand its impact on sentiment analysis accuracy.
+            
+            Furthermore, we explored term frequency-inverse document frequency (TF-IDF) and word embedding techniques across multiple datasets. These methodologies allowed for a comprehensive examination of sentiment analysis methods, their efficacy, and insights derived from social media data regarding public opinion.
+        </p>
+        <h2>Model Training and Data Preparation</h2>
+        <h3>Preparing the Dataset</h3>
+        <p>For this project, the sentiment analysis dataset was sourced from Kaggle. The dataset contains text data along with corresponding sentiment labels, which are used for training and evaluating sentiment analysis models.</p>
+        <a href="https://www.kaggle.com/datasets/abhi8923shriv/sentiment-analysis-dataset">Kaggle Dataset link</a>
+        <h3>Preprocessing the Dataset</h3>
+        <p>The dataset underwent preprocessing steps to clean and prepare the text data for model training. This included removing special characters, URLs, HTML tags, punctuation, and converting text to lowercase. Additionally, categorical variables were encoded, and missing values were handled.</p>
+        <h2>Applied Models</h2>
+        <div id="Logistic Regression">
+            <h3>Logistic Regression</h3>
+        </div>
+        <div id="Naive Bayes">
+            <h3>Naive Bayes</h3>
+        </div>
+        <div id="Random Forest">
+            <h3>Random Forest</h3>
+        </div>
+        <div id="AdaBoost">
+            <h3>AdaBoost</h3>
+        </div>
+        <div id="Gradient Boosting">
+            <h3>Gradient Boosting</h3>
+        </div>
+        <div id="LightGBM">
+            <h3>LightGBM</h3>
+        </div>
+        <div id="Support Vector Machine">
+            <h3>Support Vector Machine (SVM)</h3>
+        </div>
+        <div id="Decision Tree">
+            <h3>Decision Tree</h3>
+        </div>
+        <div id="K-Nearest Neighbors">
+            <h3>K-Nearest Neighbors (KNN)</h3>
+        </div>
+
+        <h2>Google colab Link </h2>
+        <a href="https://colab.research.google.com/drive/1_9mr_G1Wt8bteyyMEFJYBImPcIteTcSQ#scrollTo=rXLQ2SojwPjc">Prml_Project_code_without_using_nltk</a>
+        <br>
+        <a href="https://colab.research.google.com/drive/1ve_W16xDOUdZ6SFE2UtGImb0tKAohI6a">Prml_Project_code_using_nltk</a>
+    </section>
+
+    <section id = "GitHub Repository Link">
+        <h2 style="font-size: 2em;">GitHub Repository Link</h2>
+        <p>You can find the code for this project on GitHub: <a href="https://github.com/MahekVanjani611/PRML_Sentiment-Classification">GitHub Repository</a></p>
+    </section>
+
+    <section id = "YouTube Link">
+        <h2 style="font-size: 2em;">YouTube Link</h2>
+        <p>Watch a demo of our project on YouTube: <a href="https://youtu.be/aBRss9JAC30?si=CgetNXSQCvsyzGnt">Project Demo</a></p>
+        <iframe width="667" height="500" src="https://www.youtube.com/embed/aBRss9JAC30"></iframe>        
+    </section>
+  
+
+    <section id = "Group Members">
+        <h2 style="font-size: 2em;">Team Members</h2>
+        <div class="member-container">
+            <div class="member">
+                <img src="https://media.licdn.com/dms/image/D5603AQFHlxMMh7oZuQ/profile-displayphoto-shrink_800_800/0/1706448645833?e=1718841600&v=beta&t=xvoDgTTO-2xKGhWWKoMRhOsPfJkWsqkq-1jqnNFtiW0" alt="Himanshu Sharma" class = "member-img">
+                <p>Himanshu Sharma</p>
+                <p>(B22EE080)</p>
+            </div>
+            <div class="member">
+                <img src="https://media.licdn.com/dms/image/D4D03AQHSCc_rqzYH9g/profile-displayphoto-shrink_800_800/0/1690297063874?e=1718841600&v=beta&t=yTvV3lO0vlFr6Nzy2aNguNTOq38cLE-Acqtz7cHiMWY" alt="Priyansh Saxena" class = "member-img">
+                <p>Priyansh Saxena</p>
+                <p>(B22EE075)</p>
+            </div>
+            <div class="member">
+                <img src="https://media.licdn.com/dms/image/D4D03AQFzAtousw2yGQ/profile-displayphoto-shrink_800_800/0/1700056729267?e=1718841600&v=beta&t=HhLNK_Lcscbwzg25xmj29gwQNtp_P4hgLOA5fExFL1E" alt="Vasishtha Pandya" class = "member-img">
+                <p>Vasishtha Pandya</p>
+                <p>(B22CS036)</p>
+            </div>
+            <div class="member">
+                <img src="https://media.licdn.com/dms/image/D5603AQERsJPZWnpyFA/profile-displayphoto-shrink_800_800/0/1709007975790?e=1718841600&v=beta&t=FG8lCcb6xCWw2fdL6JpSqiiC2R2-gLTSnidJyJDbUvg" alt="Vidhi Jain" class = "member-img">
+                <p>Vidhi Jain</p>
+                <p>(B22CS083)</p>
+            </div>
+            
+        </div>
+        <div class="member-containers">
+            <div class="member">
+                <img src="https://media.licdn.com/dms/image/D5635AQE7rEg-e-L3QQ/profile-framedphoto-shrink_800_800/0/1711777399366?e=1714201200&v=beta&t=gGdcI4dnReFeAino3Z8gBBlSh45BkJpcUTWvDgbpJEs" alt="Mahek Vanjani" class = "member-img">
+                <p>Mahek Vanjani</p>
+                <p>(B22EE088)</p>
+            </div>
+            <div class="member">
+                <img src= "https://media.licdn.com/dms/image/C4D03AQFaHmMQZkK-eg/profile-displayphoto-shrink_800_800/0/1667973437985?e=1718841600&v=beta&t=qeMME8jzL1qdz0gf1EAlyTYpm9U__CigkPiimliJx2M" alt="Saumay Shah" class = "member-img">
+                <p>Saumay Shah</p>
+                <p>(B22CS074)</p>
+            </div>
+            <div class="member">
+                <img src="https://media.licdn.com/dms/image/D5603AQG0NOTUq4gLEw/profile-displayphoto-shrink_800_800/0/1713612776401?e=1718841600&v=beta&t=SeZbjqyiP8kzMXo-f_dWl8b0Ue0tWoeE7pbk5ZDThYY" alt="Anushka Desai" class = "member-img">
+                <p>Anushka Desai</p>
+                <p>(B22EE012)</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
